@@ -6,4 +6,5 @@ date: 2018-08-14 15:30:20
 * 趁还能折腾的时候多学习！
 * 个人主页： http://www.shiming.site/
 * GitHub:  https://github.com/Shimingli
+* 掘金: https://juejin.im/user/584a04aea22b9d0058cd2518
 * QQ: 737141437 
