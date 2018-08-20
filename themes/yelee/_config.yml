@@ -48,6 +48,7 @@ subnav:
   知乎: "https://www.zhihu.com/people/li-shi-ming-46-52/activities"
   #豆瓣: "douban"
   简书: "https://www.jianshu.com/u/a58eb984bda4"
+  掘金: "https://juejin.im/user/584a04aea22b9d0058cd2518"
   #SegmentFault: ""
   #博客园: "cnblogs"
   #CSDN: ""
@@ -259,10 +260,10 @@ google_site:
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
 google_analytics: 
-
+#   百度统计
 # 百度统计 http://sitecenter.baidu.com/sc-web/
-# 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
-baidu_tongji: 
+# 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容     QAZ123qaz  密码  hni4925
+baidu_tongji: 1add6c64d9c467153aaed18d249d81c4
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
