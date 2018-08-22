@@ -8,14 +8,13 @@ tags: [Hexo,阿里域名,博客]
 * 博客的地址：[我的博客](http://www.shiming.site/)
    * PC端的效果
 ![PC端的效果](https://upload-images.jianshu.io/upload_images/5363507-ba3860adcb584a57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<!--  more  -->
    * 手机端效果
 ![手机端效果一](https://upload-images.jianshu.io/upload_images/5363507-ad4a55e07594b58a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![手机端效果二](https://upload-images.jianshu.io/upload_images/5363507-c5ae27aabcc81fa5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * 最近抽空终于搭建完成，网上的资料很多，这篇文章只记录下遇到的问题，如果你想搭建一个博客！可能对你有些帮助。
-* [推广：阿里云代金券](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=ikk1hmxh)
+
 
 ## Hexo+GitHub
   * 现在网络上很多，有好多的文章写得很好，在这里推荐两篇文章！只要按照这步骤来，基本上都可以完成!没有什么技术的难度，就是体力活☺☺☺
@@ -26,6 +25,7 @@ tags: [Hexo,阿里域名,博客]
   * 域名我是在阿里云上买的 [阿里云](https://wanwang.aliyun.com/?spm=5176.8142029.735711.56.a72376f4MMmf6X) 
   * 输入你想要买的域名地址，如图所示!选择一个您觉得合适的域名，加入到清单，然后购买就可以了
 ![域名](https://upload-images.jianshu.io/upload_images/5363507-bbd42440357260be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* 这个是阿里云的代金券！[阿里云代金券](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=ikk1hmxh)
 * 购买成功了，进入域名控制台
 ![控制台](https://upload-images.jianshu.io/upload_images/5363507-b2dfbb9ab09bd1d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 * 点击解析设置，然后添加记录，就会出现下面的窗口
@@ -41,7 +41,9 @@ tags: [Hexo,阿里域名,博客]
 ![settings](https://upload-images.jianshu.io/upload_images/5363507-87e99bbe6ab338b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 主题选择
+*  [有哪些好看的Hexo主题](https://www.zhihu.com/question/24422335)
 * 个人看了几个，我还是比较喜欢这个 [Yelee](https://github.com/MOxFIVE/hexo-theme-yelee)。感觉比较闷骚
+*  `clone`到本地
 ```
 git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
 ```
@@ -91,29 +93,37 @@ search:
   ## true: get search.xml file when the page has loaded
   ## false: get the file when search box gets focus
 ```
-* 文章的多`tags`,需要用`[]`，其中用逗号分隔
-```
----
-title: Go语言实现的WebSocket
-date: 2018-07-15 16:02:08
-tags: [Go,WebSocket]
----
-```
-* `md`，文件对空格敏感，如图所示，
-![image.png](https://upload-images.jianshu.io/upload_images/5363507-a96c5f5b6d006718.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-  * 通过命令` hexo g`命令的时候，会报如下的错误
-![error](https://upload-images.jianshu.io/upload_images/5363507-2c71934724bc4f9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-* 关于文章的摘要，需要使用到  <!—-  more  --> ,具体使用的方式如下
-```
----
-title: Go语言实现的WebSocket
-date: 2018-07-15 16:02:08
-tags: [Go,WebSocket]
----
-* 最终的效果如下
-![Web端上传的信息](https://upload-images.jianshu.io/upload_images/5363507-1df3bbfdd7b78fff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Web端得到的打印的信息](https://upload-images.jianshu.io/upload_images/5363507-394f230f0c32cdab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<!--  more  -->
-![服务端的代码的实现](https://upload-images.jianshu.io/upload_images/5363507-1c4e57241edf86c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#### 再来一个好玩的，如何统计网页的访问量？如下图所示，请忽略我的可怜的访问量？
+
+![访问量](https://upload-images.jianshu.io/upload_images/5363507-4af81e030d02f92c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/5363507-683a8f05531721ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 在`yelee` 主题下的 `_config.yml`文件中，有个百度统计
 ```
 
+#   百度统计
+# 百度统计 http://sitecenter.baidu.com/sc-web/
+# 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容     
+baidu_tongji: 
+```
+* 登录注册后填写网站,然后获取代码
+
+![百度统计.png](https://upload-images.jianshu.io/upload_images/5363507-6092eaba96e7c1d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![获取代码的详情](https://upload-images.jianshu.io/upload_images/5363507-b3cce935c7a79442.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+* 这是我的获取代码的详情
+```
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1add6c64d9c467153aaed18d249d81c4";
+  var s = document.getElementsByTagName("script")[0]; 
+```
+* 把这一串东西 `1add6c64d9c467153aaed18d249d81c4`放到百度统计一栏，即可。
+![百度统计](https://upload-images.jianshu.io/upload_images/5363507-865d469abea10fea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+*  然后 `hexo g` `hexo s` `hexo d` ,然后`push`到 `GitHub`.他会自动的检测代码。
