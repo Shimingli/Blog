@@ -6,6 +6,7 @@ tags: [Hexo,阿里域名,博客]
 
 ##  效果
 * 博客的地址：[我的博客](http://www.shiming.site/)
+<!--  more  -->
    * PC端的效果
 ![PC端的效果](https://upload-images.jianshu.io/upload_images/5363507-ba3860adcb584a57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
    * 手机端效果

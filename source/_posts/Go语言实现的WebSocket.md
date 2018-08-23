@@ -4,9 +4,10 @@ date: 2018-07-15 16:02:08
 tags: [Go,WebSocket]
 ---
 * 最终的效果如下
+<!--  more  -->
 ![Web端上传的信息](https://upload-images.jianshu.io/upload_images/5363507-1df3bbfdd7b78fff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![Web端得到的打印的信息](https://upload-images.jianshu.io/upload_images/5363507-394f230f0c32cdab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-<!--  more  -->
+
 ![服务端的代码的实现](https://upload-images.jianshu.io/upload_images/5363507-1c4e57241edf86c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![服务端的信息](https://upload-images.jianshu.io/upload_images/5363507-7335f93af21b8ca3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
