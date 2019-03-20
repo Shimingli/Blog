@@ -54,7 +54,7 @@ tags: Vue.js
 ####　第二个Demo
 *  使用 v-cloak 能够解决 插值表达式闪烁的问题
 *  v-text是默认没有闪烁的问题的 
- *  v-text会覆盖元素中原本的内容，但是插值表达式只会替换占位符，不会把整个元素清空
+*  v-text会覆盖元素中原本的内容，但是插值表达式只会替换占位符，不会把整个元素清空
 *  v-html 可以渲染出内容中所带的标签的内容
 ```
 <!DOCTYPE html>
@@ -101,15 +101,16 @@ tags: Vue.js
 </html>
 
 ```
+
 #### 第三个Demo
 
-* 如何定义一个Vue的代码结构  如何定义插值表达式 和  v-text  v-cloak 
+*  如何定义一个Vue的代码结构  如何定义插值表达式 和  v-text  v-cloak 
 *  v-html 
 *  v-bind  缩写 : 
 *  v-on 时间绑定机制 缩写 @
+
+
 ````
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -177,16 +178,16 @@ tags: Vue.js
 <!-- v-html -->
 <!-- v-bind  缩写 : -->
 <!-- v-on 时间绑定机制 缩写 @-->
-
 ````
+
+
 ####　第四个Demo
 
-* .prevent  阻止默认的行为 阻止标签到处跑
+*  .prevent  阻止默认的行为 阻止标签到处跑
 
 *  capture 先把事件传递给div 然后在给到btn 事件传递变了一个方向 
 
 *  /stop事件不能給div傳遞事件  
-
 
 *  once 事件只触发一次 
 *  stop和self的区别 
@@ -321,13 +322,11 @@ tags: Vue.js
 
 ```
 
+
+
 #####  v-model 的数据双向绑定
-* 在浏览器的 console里面输入 window.vm 就可以找到我们代码中赋值，
-当然我们也可以 vm.msg 获取我们代码里面赋值 
-我们也可以改变页面的msg的值 
-vm.msg="new"; 刷新一下 页面就改变额
-*  v-model 可以实现表单元素和model 中数据的双向绑定，注意v-model只能运用在表单元素中 
-     input（address email text radio） select checkbox textarea 
+* 在浏览器的 console里面输入 window.vm 就可以找到我们代码中赋值，当然我们也可以 vm.msg 获取我们代码里面赋值 ,我们也可以改变页面的msg的值 vm.msg="new"; 刷新一下 页面就改变额
+* v-model 可以实现表单元素和model 中数据的双向绑定，注意v-model只能运用在表单元素中 input（address email text radio） select checkbox textarea 
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -377,8 +376,10 @@ vm.msg="new"; 刷新一下 页面就改变额
 ```
 
 ####  实现的计算器
-* `var codeStr="parseInt(this.n1)"+this.opt+"parseInt(this.n2)"
-                this.result=eval(codeStr)`在项目中不要经常用这个方案，这是投机取巧的方式 
+
+* `var codeStr="parseInt(this.n1)"+this.opt+"parseInt(this.n2)"this.result=eval(codeStr)`在项目中不要经常用这个方案，这是投机取巧的方式 
+
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -449,7 +450,9 @@ vm.msg="new"; 刷新一下 页面就改变额
 </html>
 ```
 
+
 ####  Vue中使用样式
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -567,7 +570,7 @@ vm.msg="new"; 刷新一下 页面就改变额
 ```
 
 ####　这就就是绑定key  有个疑问？？？现在最新版本的key可以使用对象了啊
-＊原来的2.4.0的时候 只能使用 number或者string    key在使用的时候，必须使用v-bind属性绑定的形式，指定key的值 在组件中循环的时候，v-for 必须指定key值
+* 原来的2.4.0的时候 只能使用 number或者string    key在使用的时候，必须使用v-bind属性绑定的形式，指定key的值 在组件中循环的时候，v-for 必须指定key值
 ```
 <!DOCTYPE html>
 <html lang="en">
