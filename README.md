@@ -19,3 +19,58 @@ $ hexo d == hexo deploy
 ```
 
 * hexo s 发生了错误的时候：https://segmentfault.com/q/1010000008638413
+
+* 如果报错
+```
+Template render error: (unknown path)
+  Error: filter not found: nameope
+    at Object._prettifyError (E:\blog\hexo\bloghexo\node_modules\nunjucks\src\li
+b.js:36:11)
+    at E:\blog\hexo\bloghexo\node_modules\nunjucks\src\environment.js:545:19
+    at Template.root [as rootRenderFunc] (eval at _compile (E:\blog\hexo\bloghex
+o\node_modules\nunjucks\src\environment.js:615:18), <anonymous>:27:3)
+    at Template.render (E:\blog\hexo\bloghexo\node_modules\nunjucks\src\environm
+ent.js:538:10)
+    at Environment.renderString (E:\blog\hexo\bloghexo\node_modules\nunjucks\src
+\environment.js:362:17)
+    at Promise.fromCallback.cb (E:\blog\hexo\bloghexo\node_modules\hexo\lib\exte
+nd\tag.js:62:48)
+    at tryCatcher (E:\blog\hexo\bloghexo\node_modules\bluebird\js\release\util.j
+s:16:23)
+    at Function.Promise.fromNode.Promise.fromCallback (E:\blog\hexo\bloghexo\nod
+e_modules\bluebird\js\release\promise.js:180:30)
+    at Tag.render (E:\blog\hexo\bloghexo\node_modules\hexo\lib\extend\tag.js:62:
+18)
+    at Object.onRenderEnd (E:\blog\hexo\bloghexo\node_modules\hexo\lib\hexo\post
+.js:282:20)
+    at Promise.then.then.result (E:\blog\hexo\bloghexo\node_modules\hexo\lib\hex
+o\render.js:65:19)
+    at tryCatcher (E:\blog\hexo\bloghexo\node_modules\bluebird\js\release\util.j
+s:16:23)
+    at Promise._settlePromiseFromHandler (E:\blog\hexo\bloghexo\node_modules\blu
+ebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\blog\hexo\bloghexo\node_modules\bluebird\js\re
+lease\promise.js:569:18)
+    at Promise._settlePromise0 (E:\blog\hexo\bloghexo\node_modules\bluebird\js\r
+elease\promise.js:614:10)
+    at Promise._settlePromises (E:\blog\hexo\bloghexo\node_modules\bluebird\js\r
+elease\promise.js:693:18)
+    at Async._drainQueue (E:\blog\hexo\bloghexo\node_modules\bluebird\js\release
+\async.js:133:16)
+    at Async._drainQueues (E:\blog\hexo\bloghexo\node_modules\bluebird\js\releas
+e\async.js:143:10)
+    at Immediate.Async.drainQueues (E:\blog\hexo\bloghexo\node_modules\bluebird\
+js\release\async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+
+```
+
+* 解决的思路是 ：[hexo/issues/2384](https://github.com/hexojs/hexo/issues/2384)
+* 导致的原因是：不能使用 两个连起来的大括号，所以本文都是去掉的，但是呢，能在代码块中使用
+```
+ 这种在正文使用会报错，代码块中使用不会
+{{ ddd }}   
+
+```
