@@ -16,8 +16,10 @@ $ hexo n == hexo new
 $ hexo g == hexo generate
 $ hexo s == hexo server
 $ hexo d == hexo deploy
-```
 
+
+```
+* **npm uninstall -g  hexo-prism-plugin** 卸载某个插件 
 * hexo s 发生了错误的时候：https://segmentfault.com/q/1010000008638413
 
 * 如果报错
