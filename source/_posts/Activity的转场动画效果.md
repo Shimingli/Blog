@@ -15,7 +15,7 @@ startActivity(new Intent(MainActivity.this, Main2Activity.class));
                  * in 的动画是第二个activity （）进入的动画，out是第一个activity finish（）的动画
                  * 如果两个时间不一样的话，这就会导致一种翻书的效果，in out的动画是从下往上的动画
                  */
- overridePendingTransition(R.anim.in,R.anim.out);```
+ overridePendingTransition(R.anim.in,R.anim.out);
 2、R.anim.in中的代码  
 ```
 <?xml version="1.0" encoding="utf-8"?>
