@@ -1,5 +1,11 @@
 # Blog
+
+* 新電腦安裝東西  https://blog.csdn.net/smallnetter/article/details/98492603
+
+
 我的博客
+
+
 * 使用`yelee`主题
 * 一共三十一篇文章
 ##  `Hexo` 几个常用的命令
